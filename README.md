@@ -1,7 +1,7 @@
 # MyApp
 
-npm install
-bower install
+npm install<br>
+bower install<br>
 
-run: gulp
-build: gulp build
+run: gulp<br>
+build: gulp build<br>
