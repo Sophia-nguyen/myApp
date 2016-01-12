@@ -25,7 +25,7 @@ gulp.task('clean-build', function () {
 // 'tsc-app': compile all .ts file to .js file (in app)
 // 'systemjs-builder': 
 gulp.task('build-sjs', function (done) {
-    runSequence('serve-dev', /*['build:asset'],*/ buildSJS);
+    runSequence('serve-dev', ['build:asset'], buildSJS);
     function buildSJS () {
         var builder = new Builder('.');
         builder.config(config.systemjsBuild);
@@ -48,10 +48,11 @@ gulp.task('build-sjs', function (done) {
     }
 });
 
+
 gulp.task('build:asset', function () {
-    gulp.src(config.dist.assets)
-            .pipe(gulp.dest(config.build.assets));
+    gulp.src(config.dist.assets + '**/*.*')
+            .pipe(gulp.dest(config.build.assetPath));  
 
     gulp.src(config.dist.path + 'index.html')
-            .pipe(gulp.dest(config.build.assetPath));
+            .pipe(gulp.dest(config.build.path));
 });
