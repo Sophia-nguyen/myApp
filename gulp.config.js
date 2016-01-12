@@ -52,7 +52,7 @@ module.exports = function () {
             port: 8080,
             host: "127.0.0.1",
             open: '/',
-            root: 'src/',
+            root: 'dist/',
             file: "index.html",
             wait: 1000
         },
@@ -66,16 +66,16 @@ module.exports = function () {
     };
 
     var systemjsBuild = {
-        baseURL: 'dist',
-        map: {
-            'angular2': 'node_modules/angular2',
-            'rxjs': 'node_modules/rxjs'
+        paths: {
+            '*': 'dist/*',
+            'angular2/*': 'node_modules/angular2/*',
+            'rxjs/*': 'node_modules/rxjs/*'
         },
         packages: {
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
         }
     };
 
