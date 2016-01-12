@@ -4,8 +4,8 @@ import {RouterLink, RouteDefinition} from 'angular2/router';
 import {APP_ROUTES} from '../../routes';
 
 @Component({
-    selector: 'navbar',
-    templateUrl: 'app/navbar/navbar.html',
+    selector: 'header',
+    templateUrl: 'app/components/navbar/navbar.html',
     directives: [RouterLink, CORE_DIRECTIVES]
 })
 export class NavbarComponent {
