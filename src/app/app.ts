@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
 import {RouterOutlet, RouteConfig} from 'angular2/router';
 import {APP_ROUTES} from './routes';
-import {NavbarComponent} from './components/navbar';
+import {NavbarComponent} from './components/navbar/navbar';
 
 @Component({
     selector: 'main-app',
