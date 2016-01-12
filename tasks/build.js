@@ -56,3 +56,7 @@ gulp.task('build:asset', function () {
     gulp.src(config.dist.path + 'index.html')
             .pipe(gulp.dest(config.build.path));
 });
+
+gulp.task('build:html', function () {
+    //TODO minify HTML and concat with main.js
+});
