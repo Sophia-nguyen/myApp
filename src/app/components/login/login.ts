@@ -2,7 +2,7 @@
 
 @Component({
     selector: 'login',
-    templateUrl: 'app/login/login.html',
+    templateUrl: 'app/components/login/login.html',
     styleUrls: [
         'app/login/login.css'
     ]
