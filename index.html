@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Angular 2 QuickStart</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   
+    <link rel="stylesheet" href="dist/assets/default.css">
+  </head>
+  <body>
+    <main-app>
+      <i class="center-fix main-spinner fa fa-spin fa-spinner"></i>
+    </main-app>
+
+      <!-- build:js assets/bundle.js -->
+      <!-- bower:js -->
+
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+
+      <script src="bower_components/bootswatch-dist/js/bootstrap.js"></script>
+
+      <!-- endinject -->
+
+      <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+      <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+      <!-- endbuild -->
+
+      <!-- build:remove -->
+      <script src="node_modules/rxjs/bundles/Rx.js"></script>
+      <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+      <script src="node_modules/angular2/bundles/router.dev.js"></script>
+      <!-- endbuild -->
+    
+    <script>
+        System.config({
+            baseURL: 'dist/',
+            packages: {
+                'app': {
+                    format: 'register',
+                    defaultExtension: 'js'
+                },
+                'angular2': {
+                    defaultExtension: 'js'
+                }
+            },
+            map: {
+                'angular2/*': 'node_modules/angular2/*'
+            }
+        });
+
+        System.import('app/main.js').then(null, console.error.bind(console));
+    </script>
+  </body>
+</html>
