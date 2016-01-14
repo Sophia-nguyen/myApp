@@ -5,7 +5,7 @@ import {NavbarComponent} from './components/navbar/navbar';
 
 @Component({
     selector: 'main-app',
-    templateUrl: 'app/app.html',
+    templateUrl: './app/app.html',
     directives: [RouterOutlet, NavbarComponent]
 })
 @RouteConfig(APP_ROUTES)
