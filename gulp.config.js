@@ -53,7 +53,7 @@ module.exports = function () {
             host: "127.0.0.1",
             open: '/',
             root: '.',
-            file: "index.html",
+            file: "dist/index.html",
             wait: 1000
         },
         prod: {
