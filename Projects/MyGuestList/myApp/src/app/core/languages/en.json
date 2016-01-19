@@ -1,0 +1,11 @@
+﻿{
+    "header.title": "MyGueslist",
+    "footer.lbl.title": "Footer",
+
+    "login.lbl.userName": "User name",
+    "login.lbl.pass": "Pass",
+    "login.btn.login": "Login",
+
+    "home.lbl.tile": "Home",
+    "home.lbl.wellcome": "Welcome to MyGuestList!"
+}
