@@ -1,0 +1,13 @@
+﻿<form class="row">
+    <div class="form-group">
+        <label>User name</label>
+        <input type="text" class="form-control" [(ngmodel)]="model.userName" />
+    </div>
+    <div class="form-group">
+        <label>Pass</label>
+        <input type="text" class="form-control" [(ngmodel)]="model.pass" />
+    </div>
+    <div class="form-group">
+        <button (submit)="login()">Login</button>
+    </div>
+</form>
